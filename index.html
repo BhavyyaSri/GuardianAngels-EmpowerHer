@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpowHER - Women's Safety App</title>
+    <meta name="description" content="Progressive web app for women's safety with emergency SOS, location sharing, and unsafe area reporting" />
+    <meta name="author" content="Guardian Angels Team" />
+    <meta name="keywords" content="women safety, emergency, SOS, location sharing, security, empowerment" />
+    <meta name="theme-color" content="#dc2626" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EmpowHER" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="EmpowHER - Women's Safety App" />
+    <meta property="og:description" content="Progressive web app for women's safety with emergency SOS and location sharing" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/favicon.ico" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EmpowHER - Women's Safety" />
+    <meta name="twitter:description" content="Your safety companion with emergency SOS and location sharing" />
+    <meta name="twitter:image" content="/favicon.ico" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
