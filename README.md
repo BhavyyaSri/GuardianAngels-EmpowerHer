@@ -37,11 +37,15 @@ npm run dev
 Open the local URL shown in the terminal (typically http://localhost:5173).
 
 ## Live Demo / Deployment
-- Live site: https://empower-her-sos-app.vercel.app/
+- Live site: https://guardian-angels-empower-her.vercel.app/
 - Demo video: https://drive.google.com/file/d/1EmlrusbHLQeS8fbskX3tXHOZDOtwuQpg/view?usp=sharing
 
 ## UI/UX / Design Link (if applicable)
 - Presentation / design assets (Drive): https://drive.google.com/file/d/1RjVX4E77cB8iQzUWITjkVY419uPFOw2g/view?usp=sharing
+- <img width="676" height="1080" alt="image" src="https://github.com/user-attachments/assets/4a34cd66-0ed4-4038-b371-d95bc693f489" />
+<img width="676" height="1080" alt="image" src="https://github.com/user-attachments/assets/6af2403e-92fc-42ff-8265-f7a0e154dff0" />
+
+
 
 ## Future Enhancements
 - Offline-first data sync and contact backup.
