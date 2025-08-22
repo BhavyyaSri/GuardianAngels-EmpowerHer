@@ -1,0 +1,29 @@
+{
+  "name": "EmpowHER - Women's Safety",
+  "short_name": "EmpowHER",
+  "description": "A progressive web app for women's safety and emergency response",
+  "theme_color": "#dc2626",
+  "background_color": "#fefeff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["safety", "emergency", "utilities"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Emergency SOS",
+      "short_name": "SOS",
+      "description": "Quick access to emergency SOS",
+      "url": "/?action=sos",
+      "icons": []
+    }
+  ]
+}
